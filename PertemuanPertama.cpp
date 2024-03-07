@@ -18,11 +18,11 @@ void input() {                //procedure untuk input
 		}
 	}
 	cout << endl;                     //output ke layar
-	cout << "====================";   //output ke layar
-	cout << "masukan Elemen Array";   //output ke layar
-	cout << "====================";   //output ke layar
+	cout << "====================" << endl;   //output ke layar
+	cout << "masukan Elemen Array" << endl;   //output ke layar
+	cout << "====================" << endl;   //output ke layar
 
-	for (int i = 0; 1 < n; i++) {     //looping dengan i di mulai dari 0 hingga n-1
+	for (int i = 0; i < n; i++) {     //looping dengan i di mulai dari 0 hingga n-1
 		cout << "Data ke-" << (i + 1) << "; "; //output ke layar
 		cin >> a[i];                  //input dari pengguna
 	}  
@@ -55,3 +55,10 @@ void bubllesortArray() {                 //procedure untuk mengurutkan array den
 	}
 }
 
+int main()
+{
+	input();                     //memanggil read()
+	bubllesortArray();           //memanggil bubbleSortArray()
+	display();                   //memanggil display()
+	return 0;
+}
